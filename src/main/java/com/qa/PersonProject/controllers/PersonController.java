@@ -25,6 +25,11 @@ public class PersonController {
         return "Testing 1, 2, 3";
     }
 
+    @GetMapping("/test2")
+    public String test2(){
+        return "Testing 2222";
+    }
+
     @PostMapping("/create")
     public PersonDTO addPerson(@RequestBody @Valid Person person){
 
